@@ -10,7 +10,7 @@ source:
   sha256: 662682567ecae226718a634ab5162f49d62d262b9e730f58cec09bcdea7f7417
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -30,6 +30,7 @@ requirements:
     - scipy
     - sympy
     - tqdm
+    - ipywidgets
 
 test:
   imports:
