@@ -10,7 +10,7 @@ source:
   sha256: 4edbed32f9c7a9206fa70d086a1570458f0020eeaddad042bbe199b56f49c77d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -20,19 +20,18 @@ requirements:
     - pip
     - poetry
   run:
-    - assimulo
-    - black
-    - dataclasses
-    - matplotlib-base
-    - numpy
-    - pandas
+    - assimulo >= 3.0
+    - black >= 22.6
+    - matplotlib-base >= 3.5
+    - numpy >= 1.23
+    - pandas >= 1.4
     - python >=3.7
-    - python-libsbml
-    - scipy
-    - sympy
-    - tqdm
-    - ipywidgets
-    - typing-extensions
+    - python-libsbml >= 5.19
+    - scipy >= 1.8
+    - sympy >= 1.10
+    - tqdm >= 4.64
+    - ipywidgets >= 7.7
+    - typing-extensions >= 4.3
 
 test:
   imports:
@@ -50,7 +49,7 @@ about:
   license_family: GPL3
   license_file: LICENSE
   summary: A package to build metabolic models
-  doc_url: https://readthedocs.org/projects/modelbase/
+  doc_url: https://qtb-hhu.gitlab.io/modelbase-software/
   dev_url: https://gitlab.com/qtb-hhu/modelbase-software
 
 extra:
