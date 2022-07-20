@@ -20,18 +20,18 @@ requirements:
     - pip
     - poetry
   run:
-    - assimulo >= 3.0
-    - black >= 22.6
-    - matplotlib-base >= 3.5
-    - numpy >= 1.23
-    - pandas >= 1.4
+    - assimulo >=3.0
+    - black >=22.6
+    - matplotlib-base >=3.5
+    - numpy >=1.23
+    - pandas >=1.4
     - python >=3.7
-    - python-libsbml >= 5.19
-    - scipy >= 1.8
-    - sympy >= 1.10
-    - tqdm >= 4.64
-    - ipywidgets >= 7.7
-    - typing-extensions >= 4.3
+    - python-libsbml >=5.19
+    - scipy >=1.8
+    - sympy >=1.10
+    - tqdm >=4.64
+    - ipywidgets >=7.7
+    - typing-extensions >=4.3
 
 test:
   imports:
