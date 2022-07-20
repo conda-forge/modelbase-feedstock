@@ -11,7 +11,7 @@ Summary: A package to build metabolic models
 
 Development: https://gitlab.com/qtb-hhu/modelbase-software
 
-Documentation: https://readthedocs.org/projects/modelbase/
+Documentation: https://qtb-hhu.gitlab.io/modelbase-software/
 
 Current build status
 ====================
