@@ -1,11 +1,11 @@
-About modelbase
-===============
+About modelbase-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/modelbase-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.com/qtb-hhu/modelbase-software
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/modelbase-feedstock/blob/main/LICENSE.txt)
 
 Summary: A package to build metabolic models
 
