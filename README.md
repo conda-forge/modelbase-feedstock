@@ -148,5 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@marvinvanaalst](https://github.com/marvinvanaalst/)
-* [@ebenhoeh](https://github.com/ebenhoeh/)
+* [@onewhaleid](https://github.com/onewhaleid/)
 

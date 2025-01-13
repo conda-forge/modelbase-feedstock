@@ -7,17 +7,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 24255ed92f40cccfa0c6ec095f34d1a3525dbbcfd7cc43945af09f0e786a4124
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - poetry >=1.5.1
   run:
@@ -26,7 +26,7 @@ requirements:
     - matplotlib-base >=3.9
     - numpy >=2.0
     - pandas >=2.2
-    - python >=3.9
+    - python >={{ python_min }}
     - python-libsbml >=5.20
     - scipy >=1.13
     - sympy >=1.12
@@ -35,6 +35,8 @@ requirements:
     - typing-extensions >=4.12
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - modelbase
     - modelbase.core
