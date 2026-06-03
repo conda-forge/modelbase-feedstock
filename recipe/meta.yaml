@@ -11,20 +11,20 @@ source:
   sha256: 503c8aeed94088f102b67674c73649652160955fe2724c7b30a1460bd3145c04
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.13
     - pip
-    - poetry >=1.5.1
+    - uv-build >=0.11,<0.12
   run:
     - assimulo >=3.5.2
     - black >=24.4
     - matplotlib-base >=3.9
-    - numpy >=2.0
+    - numpy >=2.0,<2.4
     - pandas >=2.2
     - python >=3.9
     - python-libsbml >=5.20
@@ -56,4 +56,4 @@ about:
 extra:
   recipe-maintainers:
     - marvinvanaalst
-    - onewhaleid
+    - ebenhoeh
