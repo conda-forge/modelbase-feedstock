@@ -1,5 +1,5 @@
 {% set name = "modelbase" %}
-{% set version = "1.59.10" %}
+{% set version = "1.59.11" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8939cf9ae5195ef102ba47ce6893080a99b3d2f52bc492bf6aa0533e2460464
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dc9350d6d856405f0c7e284230c23d66bc3fd94dea7ae87c4bcf9c8204927730
 
 build:
   number: 0
