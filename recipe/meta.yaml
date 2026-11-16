@@ -1,5 +1,5 @@
 {% set name = "modelbase" %}
-{% set version = "1.59.23" %}
+{% set version = "1.59.24" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eb7955059bdcf23316594cb38f0bbc633df69790c099c7b153e464cac6d78e96
+  sha256: a34336ecb2ad0733c58429edf287e282037c3ca5445e2f9c1f94d2a05d7a8eab
 
 build:
   number: 0
